@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal de Proyectos Web</title>
+
+<style>
+
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:60vh;
+    background: radial-gradient(circle at top, #1e3a8a, #020617);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:55px;
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:22px;
+    opacity:.8;
+}
+
+/* ===== GRID PROYECTOS ===== */
+.container{
+    padding:60px 10%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* ===== TARJETAS ===== */
+.card{
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    opacity:.7;
+    margin-bottom:20px;
+}
+
+/* ===== BOTON ===== */
+.btn{
+    text-decoration:none;
+    background:linear-gradient(45deg,#00c3ff,#00ff9c);
+    padding:12px 25px;
+    border-radius:50px;
+    color:black;
+    font-weight:bold;
+    display:inline-block;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.1);
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    opacity:.5;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>🚀 PORTAL DE PROYECTOS WEB</h1>
+    <p>Accede a todos los sitios desarrollados</p>
+</section>
+
+<section class="container">
+    <div class="grid">
+
+        <div class="card">
+            <h2>🎧 El Choclaudio</h2>
+            <p>Sitio web de audio profesional</p>
+            <a href="elchoclaudio.html" class="btn">Entrar</a>
+        </div>
+
+        <div class="card">
+            <h2>🛒 Catálogo Deportivo General</h2>
+            <p>Tienda y catálogo digital</p>
+            <a href="Catalogo.html" class="btn">Entrar</a>
+        </div>
+
+        <div class="card">
+            <h2>🥐 Panadería</h2>
+            <p>Catálogo de productos de panadería</p>
+            <a href="catalogo-panaderia-1.html" class="btn">Entrar</a>
+        </div>
+
+        <div class="card">
+            <h2>⚡ CEA Sopachuy Electricidad</h2>
+            <p>Instituto técnico electricidad</p>
+            <a href="cea-sopachuy-electricidad.html" class="btn">Entrar</a>
+        </div>
+
+        <div class="card">
+            <h2>🌱 Ecovolt Energía</h2>
+            <p>Energías renovables</p>
+            <a href="ecovolt.html" class="btn">Entrar</a>
+        </div>
+
+        <div class="card">
+            <h2>Mundo deportivo</h2>
+            <p>Nuevo sitio en desarrollo</p>
+            <a href="index.html" class="btn">Entrar</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 Portal de Proyectos Web
+</footer>
+
+</body>
+</html>
